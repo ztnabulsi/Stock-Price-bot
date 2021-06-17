@@ -4,7 +4,8 @@ from discord.ext import commands
 from yahoo_fin import stock_info as si
 
 
-load_dotenv()
+load_dotenv() //For the dotenv file, you will have to create that separately with
+              //the needed information for discord in order to correctly use the API functions.
 TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='!')
 
